@@ -4,7 +4,7 @@ Tipos de variables [Python]
 Ejercicios de práctica
 ---------------------------
 Autor: Inove Coding School
-Version: 1.2
+Version: 1.1
  
 Descripcion:
 Programa creado para que practiquen los conocimietos adquiridos durante la semana
