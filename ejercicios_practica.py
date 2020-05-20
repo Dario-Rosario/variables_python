@@ -17,6 +17,29 @@ __version__ = "1.2"
 def ej1():
     # Ejercicios de práctica con números
 
+    print("Ingrese el primer numero")
+    numero_1 = float(input())
+
+    print("ingrese el segundo numero")
+    numero_2 = float(input())
+
+    suma = numero_1 + numero_2
+    print("La suma de",numero_1,"y",numero_2,"es",suma)
+
+    resta = numero_1 - numero_2
+    print("La resta de",numero_1,"y",numero_2,"es",resta)
+
+    multiplicacion = numero_1 * numero_2
+    print("La multiplicacion de",numero_1,"y",numero_2,"es",multiplicacion)
+
+    division = numero_1 / numero_2
+    print("La division de",numero_1,"y",numero_2,"es",division)
+
+    potencia = numero_1 ** numero_2
+    print(numero_1,"elevado a",numero_2,"es",potencia)
+
+
+
     '''
     Realice un calculadora, se ingresará por línea de comando dos números reales
     y se deberá calcular todas las operaciones entre ellos:
@@ -25,7 +48,10 @@ def ej1():
     - Multiplicación
     - División
     - Exponente/Potencia
-    
+
+  
+   
+        
     - Para todos los casos se debe imprimir en pantalla el resultado aclarando
       la operación realizada en cada caso y con que números se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
@@ -34,7 +60,21 @@ def ej1():
 
 def ej2():
     # Ejercicios de práctica numérica y cadenas
-    
+    print("Ingrese su nombre completo")
+    nombre = str(input())
+
+    print("Ingrese su numro de DNI")
+    numero = int(input())
+
+    print("Ingrese su edad")
+    edad = int(input())
+
+    print("Ingrese su altura")
+    altura = float(input())
+
+    print("El nombre y apellido es:",nombre,"y el DNI:",numero)
+    print("El nombre y apellido es:",nombre,", la edad es:",edad,"y la altura es:",altura)
+
     '''
     Realice un programa que consulte por consola:
     - El nombre completo de la persona
@@ -52,6 +92,20 @@ def ej2():
     '''
 def ej3():
     # Ejercicios de práctica con cadenas
+    print("Cual es el nombre completo del padre")
+    nombre_padre = str(input())
+
+    print("Cual es el nombre completo de la madre")
+    nombre_madre = str(input())
+
+    print("Cual es el nombre de pila del hijo")
+    nombre_hijo = str(input())
+
+    apellido = nombre_padre.split(" ")
+    
+    apellido2 = nombre_madre.split(" ")
+    
+    print(nombre_hijo,apellido[1],apellido2[1])
 
     '''
     Realice un programa que determine cual sería el apellido de una persona
@@ -82,7 +136,17 @@ def ej3():
 
 def ej4():
     # Ejercicios de práctica con cadenas
+    
+    print("Ingrese el nombre y apellido de la primera persona")
+    nombre_persona1 = str(input())
 
+    print("Ingrese el nombre y apellido de la segunda persona")
+    nombre_persona2 = str(input())
+
+    apellido2 = nombre_persona2.split(" ")
+
+    es_apellido2_en1 = apellido2[1] in nombre_persona1
+    print(nombre_persona1,"es pariente de?",nombre_persona2,es_apellido2_en1)
     '''
     Realice un programa que determine si una persona_2 es pariente de la persona_1
     Para facilitar el ejercicio solo ingresar un nombre y un apellido por persona
@@ -113,6 +177,18 @@ def ej4():
 
 def ej5():
     # Ejercicios de práctica con cadenas
+    print("Ingrese su nombre completo")
+    nombre = str(input())
+    
+    nombre_minusc = nombre.lower()
+    print(nombre_minusc)
+
+    nombre_mayusc = nombre.upper()
+    print(nombre_mayusc)
+
+    nombre_capital = nombre.capitalize()
+    print(nombre_capital)
+
        
     '''
     Realice un programa que reciba por consola su nombre completo
@@ -139,9 +215,9 @@ def ej5():
     '''
 
 if __name__ == '__main__':
-    print("Ejercicios de práctica")
-    ej1()
+    #print("Ejercicios de práctica")
+    #ej1()
     #ej2()
     #ej3()
     #ej4()
-    #ej5()
+    ej5()
